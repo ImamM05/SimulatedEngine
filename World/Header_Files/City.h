@@ -2,6 +2,7 @@
 #define CITY_H
 #include <map>
 #include <string>
+#include <vector>
 #include <algorithm>
 
 // Base struct of City 
@@ -11,16 +12,10 @@ namespace World {
     typedef std::map<std::string, int> FreqMap;
     struct City {
         FreqMap* cityInventory;
-        inline City(const FreqMap& inv) : cityInventory(new FreqMap(inv)) {};
-        inline ~City() {
-            delete cityInventory;
-        }
-        inline void invRemoveItem(std::string& item) {
-            
-        }
-        inline void invAddItem(std::string& item) {
-            (*cityInventory)[item]++;
-        }
+        City(const std::vector<std::string>& inv);
+        virtual ~City();
+        void invRemoveItem(const std::string& item);
+        void invAddItem(const std::string& item);
         virtual void visitLandMark() = 0;
     };
 }
