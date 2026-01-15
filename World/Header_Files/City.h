@@ -16,6 +16,7 @@ namespace World {
         void invRemoveItem(const std::string& item);
         void invAddItem(const std::string& item);
         virtual void visitLandMark() = 0;
+        virtual void goShopping() = 0;
     };
 }
 
