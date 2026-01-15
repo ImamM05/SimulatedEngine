@@ -4,21 +4,17 @@ namespace World {
     City::City(const std::vector<std::string>& inv) {
         cityInventory = new FreqMap();
         for (unsigned int i = 0; i < inv.size(); i++) {
-            (*cityInventory)[inv.at(i)]++;
+            cityInventory[inv.at(i)]++;
         }
     }
-    City::~City() {
-        delete cityInventory;
-    }
-
     void City::invAddItem(const std::string& item) {
-        (*cityInventory)[item]++;
+        cityInventory[item]++;
     }
 
     void City::invRemoveItem(const std::string& item) {
-        FreqMap::iterator it = cityInventory->find(item);
-        if (it != cityInventory->end()) {
-            cityInventory->erase(it);
+        FreqMap::iterator it = cityInventory.find(item);
+        if (it != cityInventory.end()) {
+            cityInventory.erase(it);
         }
     }
 }

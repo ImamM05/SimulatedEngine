@@ -11,9 +11,8 @@
 namespace World {
     typedef std::map<std::string, int> FreqMap;
     struct City {
-        FreqMap* cityInventory;
+        FreqMap cityInventory;
         City(const std::vector<std::string>& inv);
-        virtual ~City();
         void invRemoveItem(const std::string& item);
         void invAddItem(const std::string& item);
         virtual void visitLandMark() = 0;
