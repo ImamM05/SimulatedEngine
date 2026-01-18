@@ -3,8 +3,10 @@
 #include "World/Header_Files/Eventful_Environments/CapitalCity.h"
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 int main() {
+    srand(time(0));
     std::vector<std::string> cityInventory = {"item1", "item2"};
     const char* const INTENTS[] = {"thief", "wanderer"};
     std::string cityName = "Gran Chaos Empire";
