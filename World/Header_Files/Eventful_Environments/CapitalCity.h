@@ -14,6 +14,7 @@ namespace World {
             CapitalCity(const std::vector<std::string> &inv, std::string name, const char* const intents[], const int arrLength);
             void visitLandMark(const std::string &agentName) override;
             void goShopping(const std::string &agentName) override;
+            void cityIntro(const std::string &agentName) override;
     };
 }
 

@@ -10,6 +10,10 @@ namespace World {
         }
     }
 
+    void CapitalCity::cityIntro(const std::string &agentName) {
+        std::cout << agentName << " has entered the great the CAPITAL of " << cityName << "!!!" << std::endl;
+    }
+
     void CapitalCity::visitLandMark(const std::string &agentName) {
         std::cout << agentName << " visisted " << Constants_CapitalCity::LANDMARK << " and had a great time!" << std::endl;
     }

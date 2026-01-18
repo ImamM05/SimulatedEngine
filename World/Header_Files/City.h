@@ -20,6 +20,7 @@ namespace World {
         void invAddItem(const std::string& item);
         virtual void visitLandMark(const std::string &agentName) = 0;
         virtual void goShopping(const std::string &agentName) = 0;
+        virtual void cityIntro(const std::string &agentName) = 0;
     };
 }
 
