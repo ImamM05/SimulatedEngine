@@ -18,4 +18,8 @@ namespace World {
             cityInventory.erase(it);
         }
     }
+
+    void City::pickUpItem(const std::string &agentName) {
+        
+    }
 }
