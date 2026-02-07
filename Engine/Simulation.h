@@ -1,6 +1,7 @@
 #ifndef SIMULATION_H
 #define SIMULATION_H
 #include "../AI_Agents/Header_Files/Agent.h"
+#include "../Utils/Constants/LocationConstants.h"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
