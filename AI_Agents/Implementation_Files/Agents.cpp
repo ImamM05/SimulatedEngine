@@ -7,7 +7,7 @@ namespace AI_Agents {
         this->location = location;
     }
 
-    int Agent::getLocation() {
+    int Agent::getLocationID() {
         return this->location;
     }
 
